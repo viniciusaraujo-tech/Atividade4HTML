@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela 2 - Minha Rotina Semanal</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 30px 20px;
+      background-color: #eef2f5;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+    }
+
+    table {
+      width: 100%;
+      max-width: 1000px;
+      border-collapse: collapse;
+      border: 3px solid #8f0909;
+      background-color: #ffffff;
+    }
+
+    caption {
+      font-size: 26px;
+      font-weight: bold;
+      color: #000000;
+      padding-bottom: 12px;
+    }
+
+    th,
+    td {
+      border: 1px solid #8b0d0d;
+      padding: 12px 8px;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    /* Cor de fundo 1: azul escuro (cabeçalho e coluna de horários) */
+    thead th,
+    tbody th {
+      background-color: #242323;
+      color: #a02121;
+      font-weight: bold;
+    }
+
+    /* Cor de fundo 2: azul claro (células da rotina) */
+    td {
+      background-color: #d47d7d;
+      color: #000000;
+    }
+
+    tbody th {
+      width: 130px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <caption>Minha Rotina Semanal</caption>
+    <thead>
+      <tr>
+        <th>Horário</th>
+        <th>DOM</th>
+        <th>SEG</th>
+        <th>TER</th>
+        <th>QUA</th>
+        <th>QUI</th>
+        <th>SEX</th>
+        <th>SÁB</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>08h</th>
+        <td rowspan="6">Livre o dia todo</td>
+        <td colspan="6">Acordar e café</td>
+      </tr>
+      <tr>
+        <th>09h às 11h</th>
+        <td colspan="5">Estudar</td>
+        <td rowspan="2">Inglês<br>(das 9h às 12h)</td>
+      </tr>
+      <tr>
+        <th>11h às 13h</th>
+        <td colspan="5">Almoço</td>
+      </tr>
+      <tr>
+        <th>13h às 17h</th>
+        <td colspan="5">Descanso e jogar</td>
+        <td rowspan="3">Livre o resto do dia</td>
+      </tr>
+      <tr>
+        <th>17h às 19h</th>
+        <td colspan="5">Arrumar as coisas para a faculdade</td>
+      </tr>
+      <tr>
+        <th>19h às 22h</th>
+        <td colspan="5">Faculdade</td>
+      </tr>
+      <tr>
+        <th>23h</th>
+        <td colspan="7">Jantar e Dormir</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
